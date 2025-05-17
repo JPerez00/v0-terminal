@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: 'V0 Terminal - A Sleek Terminal-Inspired Developer Portfolio',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className='antialiased'>
         {children}
       </body>
+      <Analytics/>
     </html>
   )
 }
